@@ -38,6 +38,15 @@ window.onload = function() {
     //append it to the body
     main.appendChild(canv);
   };
+
+function ScrollTo () {
+    $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
+}
 },{"trianglify":6}],2:[function(require,module,exports){
 /* globals document, ImageData */
 
