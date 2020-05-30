@@ -69,47 +69,69 @@
             <div id="contact-section">
                 <div class="contact-footer">
                     <h3 class="section-title">Contact Me</h3>
-                    <div class="slideshow-container">
-
-                        <!-- Full-width images with number and caption text -->
-                        <div class="mySlides fade">
-                          <div class="numbertext">1 / 4</div>
-                          <img src="images/vietnam.JPG" style="width:100%">
-                          <div class="text">Vietnam Trip</div>
+                    <div class="flex-container">
+                        <div name="image-slide-show-full-container" style="width:40%">
+                            <div class="slideshow-container">
+                                <!-- Full-width images with number and caption text -->
+                                <div class="mySlides fade">
+                                  <div class="numbertext">1 / 4</div>
+                                  <img src="images/vietnam.JPG" style="width:100%">
+                                  <div class="text">Vietnam Trip</div>
+                                </div>
+                              
+                                <div class="mySlides fade">
+                                  <div class="numbertext">2 / 4</div>
+                                  <img src="images/ooze.jpg" style="width:100%">
+                                  <div class="text">Oozeball Tournament</div>
+                                </div>
+                              
+                                <div class="mySlides fade">
+                                  <div class="numbertext">3 / 4</div>
+                                  <img src="images/zion.JPG" style="width:100%">
+                                  <div class="text">Zion National Park</div>
+                                </div>
+        
+                                <div class="mySlides fade">
+                                    <div class="numbertext">4 / 4</div>
+                                    <img src="images/chiphi.JPG" style="width:100%">
+                                    <div class="text">Chi Phi Bid Day</div>
+                                  </div>
+                            
+                                <!-- Next and previous buttons -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            </div>
+                              <br>
+                              
+                              <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                              </div>
+                              <script src="slides.js"></script>
+                        </div> 
+                        <div class="contact-box">
+                            <div class="contact-content">
+                                <div class="contact-info">
+                                    <p>Vinh Le</p>
+                                    <p>vinhle36@gmail.com</p>
+                                    <p>(972) 689-4614</p>
+                                </div>
+                                <div class="contact-links">
+                                    <a href="https://github.com/vinh-le">
+                                        <i class="fa fa-github fa-4x icon-3d"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/invinhcibl/">
+                                        <i class="fa fa-instagram fa-4x icon-3d"></i>
+                                    </a>
+                                    <a href="https://linkedin.com/in/vinhle36">
+                                        <i class="fa fa-linkedin fa-4x icon-3d"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                      
-                        <div class="mySlides fade">
-                          <div class="numbertext">2 / 4</div>
-                          <img src="images/ooze.jpg" style="width:100%">
-                          <div class="text">Oozeball Tournament</div>
-                        </div>
-                      
-                        <div class="mySlides fade">
-                          <div class="numbertext">3 / 4</div>
-                          <img src="images/zion.JPG" style="width:100%">
-                          <div class="text">Zion National Park</div>
-                        </div>
-
-                        <div class="mySlides fade">
-                            <div class="numbertext">4 / 4</div>
-                            <img src="images/chiphi.JPG" style="width:100%">
-                            <div class="text">Chi Phi Bid Day</div>
-                          </div>
-                    
-                        <!-- Next and previous buttons -->
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </div>
-                      <br>
-                      
-                      <!-- The dots/circles -->
-                      <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                      </div>
-                      <script src="slides.js"></script>
+                    </div>     
                 </div>
             </div>
         </div>
