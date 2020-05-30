@@ -156,7 +156,7 @@ canvas {
 .contact-footer {
     width: 100%;
     background-color: #000;
-    height: 650px;
+    height: 100vh;
 }
 
 .contact-footer .section-title {
