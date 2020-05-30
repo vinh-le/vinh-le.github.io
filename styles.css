@@ -36,22 +36,28 @@ canvas {
 
 .main h1 {
     font-size: 100px;
-    position: relative;
+    position: absolute;
     top: 45%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #000;
     /*-webkit-text-stroke: 4px black;*/
     z-index: 9999;
     font-family: "Roboto";
     font-weight: 400;
+
+
 }
 
 .main h5 {
     z-index: 9999;
     position: relative;
-    top: 34%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: "Roboto";
     font-size: 14px;
+    padding-top: 50px;
 }
 
 .nav {
