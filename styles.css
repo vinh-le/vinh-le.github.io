@@ -3,7 +3,7 @@
 
 html, body {
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    
 }
 
 * {
@@ -37,7 +37,7 @@ canvas {
 .main h1 {
     font-size: 100px;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #000;
@@ -57,6 +57,7 @@ canvas {
     transform: translate(-50%, -50%);
     font-family: "Roboto";
     font-size: 14px;
+    padding-top: 100px;
 }
 
 .nav {

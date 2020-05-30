@@ -1,5 +1,5 @@
 //file: main.js
-const trianglify = require('trianglify')
+const trianglify = require('trianglify');
 
 var main = document.querySelector('.main');
 var nav = document.querySelector('.nav');
@@ -38,11 +38,10 @@ window.onload = function() {
     main.appendChild(canv);
   };
 
-function ScrollTo () {
-    $('a').click(function(){
+  $(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
     $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
+        scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
-    return false;
 });
-}
