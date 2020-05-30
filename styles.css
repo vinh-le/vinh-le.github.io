@@ -69,6 +69,14 @@ canvas {
     box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.2);
     z-index: 9999;
 }
+.top{
+  position: absolute;
+  display: none;
+  left: 10px;
+  color: #ccc;
+  text-decoration: none;
+  padding: 20px;
+}
 
 .bottom-nav {
     position: absolute;

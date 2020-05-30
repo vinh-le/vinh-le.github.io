@@ -3,6 +3,7 @@ const trianglify = require('trianglify');
 
 var main = document.querySelector('.main');
 var nav = document.querySelector('.nav');
+var top = document.querySelector('.top');
 
 var offset = main.offsetHeight -nav.offsetHeight;
 
@@ -10,9 +11,11 @@ window.onscroll = function() {
     if(window.pageYOffset > offset) {
         nav.classList.remove('bottom-nav');
         nav.classList.add('top-nav');
+        top.style["display"] = "inline";
     }else{
         nav.classList.remove('top-nav');
         nav.classList.add('bottom-nav');
+        top.style["display"] = "none"
     }
 }
 
