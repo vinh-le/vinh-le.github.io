@@ -57,7 +57,7 @@ canvas {
     transform: translate(-50%, -50%);
     font-family: "Roboto";
     font-size: 14px;
-    padding-top: 50px;
+    padding-top: 5%;
 }
 
 .nav {
