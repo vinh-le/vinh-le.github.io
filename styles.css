@@ -147,19 +147,20 @@ canvas {
 }
 
 .container {
-    width: 70%;
+    width: 100%;
     margin: 50px auto;
     padding: 50px;
+    text-align: center;
 }
 
-.container .box {
-    width: 100%;
-    padding: 50px;
-    background: #fff;
+.box {
+    width: 960px;
+    margin: auto;
     border-radius: 10px;
-    margin-top: 10px;
     box-shadow: 05px 10px -3px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
+
 
 .contact-footer {
     width: 100%;
@@ -330,3 +331,86 @@ canvas {
       text-shadow: -2px 0 rgba(244, 67, 54, 1), 2px -1px rgba(33, 150, 243, 1);
    }
  }
+
+area {
+  cursor: pointer;
+  outline: none;
+}
+
+a:active, a:focus {
+  outline: 0;
+  border: none;
+}
+
+.background {
+  position: relative;
+}
+
+.map-hovers {
+  position: absolute;
+  z-index: 9000;
+  top: 0;
+}
+
+.popup {
+  background-color: white;
+  padding: 7px;
+  border-radius: 15px;
+  z-index: 9995;
+  border: 5px solid gray;
+}
+
+#window-popup {
+  visibility: hidden;
+  width: 250px;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+
+}
+
+#wardrobe-popup {
+  visibility: hidden;
+  width: 300px;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+}
+
+#pc-popup {
+  visibility: hidden;
+  width: 275px;
+  position: absolute;
+  bottom: 10px;
+  right: 75px;
+}
+
+#music-popup {
+  visibility: hidden;
+  width: 400px;
+  position: absolute;
+  top: 320px;
+  left: 200px;
+}
+
+#monitor-popup {
+  visibility: hidden;
+  width: 300px;
+  position: absolute;
+  top: 150px;
+  left: 200px;
+}
+
+#books-popup {
+  visibility: hidden;
+  width: 200px;
+  position: absolute;
+  top: 15px;
+  right: 405px;
+}
+
+.popup p {
+  font-size: 12px;
+  text-align: center;
+}
+

@@ -4,7 +4,19 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
         <title>Vinh Le</title>
+        <script>  
+            function myFunction(event) {
+                var popup = document.getElementById(event.target.id + "-popup");
+                if(popup.style.visibility === "visible"){
+                    popup.style.visibility = "hidden";
+                } else {
+                    popup.style.visibility = "visible";
+                }
+            }
+        </script>
     </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
     <body>
         <div class="main" id="top">
             <h1>Vinh Le</h1>
@@ -68,23 +80,69 @@
                 </div>
             </div>
             <div id="about-me-section">
+
                 <div class="container">
                     <h3 class="section-title">About Me</h3>
-                    <div class="box">
-                        <p>Coming soon! - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu est nec
-                        augue dictum feugiat. Cras convallis purus ligula, sit amet euismod arcu consequat vitae. Maecenas
-                        sollicitudin nisi enim, id auctor neque viverra non. Curabitur porta nec odio et pharetra. Suspendisse
-                        quis euismod sapien, quis lobortis neque. Sed blandit quam eget dapibus pretium. Nunc at bibendum nunc.
-                        Curabitur dui lectus, vulputate vel ullamcorper eu, mattis at lacus. Nulla a metus lorem. Maecenas et
-                        molestie justo. Proin porta lacinia libero eget congue.</p>
-                        <br>
-                        <p>Pellentesque et est id tellus fermentum posuere sit amet et leo. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Mauris id tincidunt nulla. Aenean suscipit et neque nec egestas. In condimentum, nunc
-                        tempus semper posuere, lorem felis gravida lectus, sit amet sodales tortor magna at urna. Integer leo
-                        purus, porta vitae libero quis, pulvinar commodo eros. Quisque semper luctus tempor. Morbi feugiat, ante
-                        non vehicula molestie, nibh odio ornare metus, ut iaculis urna ex vitae enim. Praesent non mattis arcu,
-                        a commodo metus. Suspendisse suscipit ipsum tortor, mattis molestie elit iaculis in. Morbi quis imperdiet
-                        velit, et laoreet mi.</p>
+                    <p style="margin-top: 0; margin-bottom: 30px; font-size: 20px;">Take a look around my room! Click on select objects to learn a little bit more about me.</p>
+                    <div class="box" id="room">
+                        <div style="position: relative;">
+                            <img src="images/about-me-bedroom.png" usemap="#image-map" width="960" height="540"/>
+                            <div class="map-hovers">
+                                <img id="books" onclick="myFunction(event)" src="about-me/books-highlight.png"/>
+                                <img id="monitor" onclick="myFunction(event)" src="about-me/monitor-highlight.png"/>
+                                <img id="music" onclick="myFunction(event)" src="about-me/music-highlight.png"/>
+                                <img id="pc" onclick="myFunction(event)" src="about-me/pc-highlight.png"/>
+                                <img id="wardrobe" onclick="myFunction(event)" src="about-me/wardrobe-highlight.png"/>
+                                <img id="window" onclick="myFunction(event)" src="about-me/window-highlight.png"/>
+                            </div> 
+                            <div id="window-popup" class="popup">
+                                <h4>Outdoors</h4>
+                                <p>I love staying active and going outside. One of my favorite
+                                    activities is playing sand volleyball with my friends.
+                                </p>
+                            </div>
+                            <div id="wardrobe-popup" class="popup">
+                                <h4>Closet</h4>
+                                <p>I really like going thrift shopping. It helps me find 
+                                    nice clothes with the added benefit of affordability and sustainability.</p>
+                            </div> 
+                            <div id="pc-popup" class="popup">
+                                <h4>PC</h4>
+                                <p>I built my first PC a few years ago and loved the process of learning
+                                    what the different components do and how they work together.</p>
+                                <br>
+                                <p>Current Specs:</p>
+                                <p>CPU: Ryzen 5 3600</p>
+                                <p>GPU: Radeon R9 270X 2GB</p>
+                            </div>
+                            <div id="music-popup" class="popup">
+                                <h4>Music</h4>
+                                <p>I listen to a lot of different kinds of music. When I'm working I prefer a mix of either orchestral pieces,
+                                     like The Lord of the Rings OST, or EDM.</p>
+                            </div>
+                            <div id="monitor-popup" class="popup">
+                                <h4>Welcome!</h4>
+                                <p>My name is Vinh Le and I'm currently a junior Software Engineering major at
+                                    the University of Texas at Dallas. My favorite part about programming is the
+                                    aspect of problem solving; no matter how insurmountable a task may seem, it can
+                                    always be broken down into more approachable parts.
+                                </p>
+                            </div>   
+                            <div id="books-popup" class="popup">
+                                <h4>Books</h4>
+                                <p>Growing up, I've always enjoyed reading. Some of my favorite genres include fantasy,
+                                    sci-fi, and mystery. My childhood favorite was a fantasy series called Fablehaven.
+                                </p>
+                            </div>                     
+                        </div>
+                        <map name="image-map" class="map-areas">
+                            <area target="_self" alt="Books" title="Books" href="#room" coords="538,99,607,158" shape="rect">
+                            <area target="_self" alt="Monitor" title="Monitor" href="#room" coords="492,258,565,320" shape="rect">
+                            <area target="_self" alt="Music" title="Music" href="#room" coords="609,332,582,293" shape="rect">
+                            <area target="_self" alt="PC" title="PC" href="#room" coords="577,372,576,461,614,463,614,381,602,373,588,372" shape="poly">
+                            <area target="_self" alt="Wardrobe" title="Wardrobe" href="#room" coords="630,109,807,461" shape="rect">
+                            <area target="_self" alt="Window" title="Window"  coords="1,0,1,320,52,321,54,382,145,362,151,82,19,0" shape="poly">
+                        </map>
                     </div>
                 </div>     
             </div>
@@ -157,7 +215,6 @@
                 </div>
             </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="bundle.js"></script>
     </body>
 </html>

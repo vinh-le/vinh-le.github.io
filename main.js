@@ -48,3 +48,23 @@ window.onload = function() {
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
 });
+
+$(document).ready(function() {
+
+    $(".map-hovers img").hide();
+    $(".map-areas area").mouseenter(function() {
+        var idx = $(".map-areas area").index(this);
+        $(".map-hovers img:eq(" + idx + ")").show();
+        return false;
+    });
+    $(".map-hovers img").mouseleave(function() {
+        $(".map-hovers img").hide();
+        return false;
+    });
+    $(".map-areas area").mouseleave(function() {
+        $(".map-hovers img").hide();
+        return false;
+    });
+    
+
+});
