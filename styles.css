@@ -129,11 +129,16 @@ canvas {
 .fullCard {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     width: 35%;
-    border: 1px solid #ccc;
     border-radius: 15px;
     margin: 10px 5px;
     padding: 0px;
     background-color: #fff;
+}
+
+.fullCard:hover {
+  background-color: #f1f4f2;
+  box-shadow: 5px 10px 18px #2f3230;
+
 }
 
 .thumbnail-img {
