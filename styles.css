@@ -50,6 +50,10 @@ canvas {
 
 }
 
+#project-link {
+  color: #7B7368;
+}
+
 .main h5 {
     z-index: 9999;
     position: relative;
@@ -122,6 +126,8 @@ canvas {
     flex-wrap: wrap;
 }
 
+
+
 .content {
     /* padding-bottom: 400px; */
 }
@@ -136,8 +142,10 @@ canvas {
 }
 
 .fullCard:hover {
+  /*
   background-color: #f1f4f2;
   box-shadow: 5px 10px 18px #2f3230;
+  */
 
 }
 
